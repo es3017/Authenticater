@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authenticator</title>
+</head>
+<body>
+    <script>
+        function checkCredentials(userId, password) {
+            if (userId === "admin" && password === "secret") {
+                console.log("Welcome Admin!");
+                document.body.innerHTML = "Welcome Admin!";
+            } else {
+                console.log("BAD LOGIN CREDENTIALS");
+                document.body.innerHTML = "BAD LOGIN CREDENTIALS";
+            }
+        }
+
+        const username = prompt("Enter your username:");
+        const password = prompt("Enter your password:");
+
+        checkCredentials(username, password);
+    </script>
+</body>
+</html>
